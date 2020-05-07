@@ -1,25 +1,26 @@
-// TODO: Write code to define and export the Employee class
-function Employee(name, id, email) {
-    this.name = name;
-    this.id = id;
-    this.email = email;
-    this.role = "Employee"
-};
+class Employee {
+    constructor(name, id, email) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
+        this.role = "Employee"
+    }
 
-Employee.prototype.getName = function () {
-    return this.name;
-};
+    getName() {
+        return this.name;
+    }
 
-Employee.prototype.getId = function () {
-    return this.id;
-};
+    getId() {
+        return this.id;
+    }
 
-Employee.prototype.getEmail = function () {
-    return this.email;
-};
+    getEmail() {
+        return this.email;
+    }
 
-Employee.prototype.getRole = function () {
-    return this.role;
+    getRole() {
+        return this.role;
+    }
 };
 
 module.exports = Employee
